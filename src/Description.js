@@ -13,12 +13,15 @@ function Description({movies}) {
   return (
     <div>
       <h1>{movie.title}</h1>
-      <p>{movie.description}</p>
-      <video controls> 
+      <p className='description'>{movie.description}</p>
+      <video controls className='video'> 
         <source src={movie.movieTrailer} type=''>
         </source> 
         </video>
-      <Link to="/">Back to Home</Link>
+        <div>
+            <Link to="/">Back to Home</Link> 
+         </div>
+      
     </div>
   )
 } 
